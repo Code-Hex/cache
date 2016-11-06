@@ -17,9 +17,12 @@ done
 
 ARG="set datafile separator ',';\
 	set xlabel 'Requests';\
+	set xtics rotate by -45 offset -1;\
 	set ylabel 'Hit Rate';\
+	set yrange [0:];\
 	set key bottom right;\
-	set terminal $FORMAT;\
+	set colors classic;\
+	set terminal $FORMAT size 400,300;\
 	plot $PLOTARG"
 if [ "$FORMAT" = "dumb" ]; then
 	gnuplot -e "$ARG"
