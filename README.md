@@ -68,5 +68,5 @@ func main() {
 
 See [report](report/)
 
-![wikipedia](report/wikipedia.svg)
+![wikipedia](https://raw.githubusercontent.com/goburrow/cache/master/report/wikipedia.svg)
 ![youtube](report/youtube.svg)
